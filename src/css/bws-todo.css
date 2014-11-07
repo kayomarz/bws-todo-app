@@ -1,0 +1,43 @@
+body {
+}
+
+#bwsHeader {
+    border: solid gray;
+    border-width: 0px 0px 1px 0px;
+}
+
+#bwsMain {
+    
+}
+
+#skeletons {
+    display: none;
+}
+
+.todo-widget > div {
+    display: inline-block;
+}
+
+.widget-todo {
+}
+
+.widget-todo .title {
+}
+
+.widget-todo .details {
+    background-color: #f7ffff
+}
+
+.widget-todo .controls {
+    background-color: #f7ffff
+}
+
+.headings {
+    font-weight: bold;
+}
+
+.widget-todo textarea,
+.widget-todo input[type="text"] {
+    width:100%;
+}
+

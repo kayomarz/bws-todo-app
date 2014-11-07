@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BWS TODO</title>
+
+    <link href="bootstrap-3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bws-todo.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div id="skeletons">
+
+      <div class="widget-todo row">
+	<div class="title col-xs-3">
+	  <p></p>
+	  <input type="text"></input>
+	</div>
+	<div class="details col-xs-5">
+	  <p></p>
+	  <textarea type="text" rows="5"></textarea>
+	</div>
+	<div class="target-date col-xs-2">
+	  <p></p>
+	  <input type="text"></input>
+	</div>
+	<div class="controls col-xs-2">
+	  <input type="checkbox" class="done" />
+	  <a class="delete" href="#">
+	    <span class="glyphicon glyphicon-remove"></span>
+	  </a>
+	</div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div id="bwsHeader" class="row bg-primary">
+	<div class="col-xs-12">
+	  <h1>Todo</h1>
+	</div>
+      </div>
+
+      <div id="bwsMain" class="row">
+	<p>
+	  Add a new todo and double click a value to edit it.
+	</p>
+	<p>
+	  <a class="btn btn-primary new-todo" href="">New todo</a>
+	</p>
+	<div class="col-xs-12">
+	  <div id="todos">
+
+	    <div class="headings row bg-warning">
+	      <div class="title col-xs-3">
+		<p>Title</p>
+	      </div>
+	      <div class="col-xs-5">
+		<p>Details</p>
+	      </div>
+	      <div class="col-xs-2">
+		<p>Target date<br/>
+		dd/mm/yyyy</p>
+	      </div>
+	      <div class="col-xs-2">
+		<p></p>
+	      </div>
+	    </div>
+	  </div>
+
+	</div>
+      </div>
+      
+    </div>
+
+</div>
+
+<script>
+  BWS = {};
+</script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bws-todo.js"></script>
+<script src="js/bws-todo/todo.js"></script>
+<script src="js/bws-todo/view-or-edit.js"></script>
+
+<!-- no bootstrap js components needed
+     <script src="bootstrap-3.3.0/js/bootstrap.min.js"></script>
+     -->
+</body>
+</html>
